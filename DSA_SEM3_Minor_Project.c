@@ -85,7 +85,7 @@ int main()
     if (solveSudoku(grid))
     {
         printGrid(grid);
-        printf("Project by: Salil Hiremath, Yash Pathak IoT-A\n");
+        printf("Project by: Salil Hiremath,IoT-A\n");
     }
     else
     {
