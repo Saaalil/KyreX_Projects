@@ -1,0 +1,88 @@
+-Problem Statement
+The Sudoku puzzle, a popular grid-based number-placement game, poses a
+compelling challenge that has intrigued puzzle enthusiasts and computer
+scientists alike. The task involves filling a 9x9 grid with digits from 1 to 9,
+adhering to specific rules: each row, each column, and each of the nine 3x3 subgrids must contain all digits without repetition.
+While Sudoku puzzles come in varying levels of difficulty, the inherent
+complexity of the game necessitates an efficient and systematic approach to
+solving them. The objective of this project is to design and implement a Sudoku
+Solver that utilizes the backtracking algorithm, known for its effectiveness in
+solving combinatorial problems with explicit constraints.
+The primary goals of the project are as follows:
+1. Develop a Sudoku Solver capable of systematically solving puzzles of
+varying difficulty levels using the backtracking algorithm.
+2. Explore the recursive nature of the backtracking algorithm and its
+application to the specific constraints posed by Sudoku.
+3. Implement the solver in a programming language, emphasizing
+adaptability and efficiency.
+4. Demonstrate the solver's capability to find solutions to Sudoku puzzles,
+showcasing its systematic exploration of solution spaces and ability to
+handle the inherent complexity of the game.
+This project aims to provide a deeper understanding of the application of
+backtracking algorithms to constraint satisfaction problems, using Sudoku as a
+representative case. The successful implementation of the Sudoku Solver will
+not only contribute to the field of algorithmic problem-solving but also serve as
+a practical tool for solving Sudoku puzzles of varying difficulty levels.
+
+
+- Methodlogy
+Unique missing candidate the unique missing candidate is used when any row,
+column or box is missing only one single digit. Naked Singles This method is
+useful when we find a square that can only take one single value, once the
+contents of other squares in the same row, column and box are considered.
+Additionally, this 9 is when the row, column and box hold 8 different numbers
+and one single number is left for that square, see Fig. 2, As we see in figure 2, it
+is possible to list all the candidates from 1 to 9 in each unfilled square, i.e.
+square 4b can only hold number 2 since it is the only candidate for this position.
+The most significant aspect is that when a candidate is found for a certain
+position then it can be removed from the list as a possible candidate in the row,
+column and box [7]. The reason that it is called the “naked single” method is
+that this kind of square contains only one possible candidate. Hidden Singles
+The hidden single method is like the naked single method but the way to find the
+way to find the empty square is different. When there is only one square in the
+row, column or box that can take a certain number, then the square must take
+that number. For example, in figure 3, we can see that both row2 and row3
+contain the digit 9 so according to the rules, row1 must also hold number 9 (in
+the square 123def). In the right side of figure 3 below, number 9 is inserted by
+using the hidden singles method.
+• Locked candidate
+Tom Davis has stated that it is possible to find a box where the only place for a
+candidate would be a row or column within that box [7]. If a candidate belongs
+to a row or column then we can remove this candidate as a possible one with
+other boxes that the row (or column) connected with them. This condition is
+shown in figure 3. The box 456abc must hold a 9 and the only positions the
+number can be placed are in squares 5a or 5c and both in the same row. This
+means that the number 9 is eliminated in row 5 from other boxes that include
+row 5.
+• Naked Pairs,
+Triplets These techniques are very similar to the naked single technique, but in
+this method we find the same two candidates in two squares. By using this
+information we can find a possible candidate to other squares. For example in
+figure 4, squares 9d and 9f can only contain values 2 and 7. By having this
+knowledge, it is obvious that square 9d and 9f cannot contain 1 or 6 so those
+candidates are removed. The only candidates are 2 and 7 in squares 9d and 9f.
+4
+Backtracking (guessing method)
+The unique missing method and the naked single method can solve all puzzles
+with easy and medium level of difficulties. To solve puzzles with even more
+difficult levels such as hard and evil the backtracking method has been used to
+complete the algorithm. A human player solves the puzzle by using simple
+techniques. If the puzzle is not solvable by using the techniques the player, then
+tries to fill the rest of the empty squares by guessing. The backtracking method,
+which is like the human strategy (guessing), is used as a help method to the
+pencil-and-paper algorithm. In other words, if the puzzle cannot be filled when
+using the unique missing method and the naked single method, the backtracking
+method will take the puzzle and fill the rest of empty squares. Generally, the
+backtracking method is to find empty square and assign the lowest valid number
+in the square once the content of other squares in the same row, column and box
+are considered. However, if none of the numbers from 1 to 9 are valid in a
+certain square, the algorithm backtracks to the previous square, which was filled
+recently. The above-mentioned methods are an appropriate combination to solve
+any Sudoku puzzles. The naked single method can find quickly single
+candidates to the empty squares that needed only one single value. Since the
+puzzle comes to its end solution the unique missing method can be used to fill
+rest of the puzzles. Finally, if either method fills the board the algorithm calls
+the backtracking method to fill the rest of the board.
+
+
+A Project by Salil Hiremath -@Saaalil
