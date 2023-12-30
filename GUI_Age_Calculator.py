@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
+import webbrowser
 
 
 def clr():
@@ -143,4 +144,4 @@ if __name__ == "__main__":
     
     
     
-    # "A proejct By Salil Hiremath,rijul Narang"
+    # "A proejct By Saalil/KyreX"
