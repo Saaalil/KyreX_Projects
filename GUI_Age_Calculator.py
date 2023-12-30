@@ -89,6 +89,9 @@ if __name__ == "__main__":
     ra_b = Button(g, text="Resultant Age", fg="Black",
                   bg="Red", command=calc_age)
     ca_b = Button(g, text="Clear All", fg="Black", bg="Red", command=clr)
+    
+    ra_c = Button(g, text="Project by KyreX",
+                  command=webbrowser.open("https://github.com/Saaalil"))
 
     d = Entry(g)
     m = Entry(g)
