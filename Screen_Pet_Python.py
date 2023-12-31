@@ -106,4 +106,4 @@ c.tongue_out = False
 root.after(1000, blink)
 root.after(5000, sad)
 root.mainloop()
-A peoject by Saalil/KyreX
+A project by Saalil/KyreX
