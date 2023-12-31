@@ -66,7 +66,7 @@ public class Banking_System_Project{
         int ch;  
         do {  
             System.out.println("\n ***Banking System Application***");  
-            System.out.println("1. Display all account details \n 2. Search by Account number\n 3. Deposit the amount \n 4. Withdraw the amount \n 5.Exit ");  
+            System.out.println("1. Display all account details \n 2. Search by Account number\n 3. Deposit the amount \n 4. Withdraw the amount \n 5.Exit \n A Project By KyreX/Saalil ");  
             System.out.println("Enter your choice: ");  
             ch = sc.nextInt();  
                 switch (ch) {  
@@ -127,3 +127,8 @@ public class Banking_System_Project{
             while (ch != 5);  
         }  
     }  
+
+
+
+
+    // A project by KyreX/Saalil
