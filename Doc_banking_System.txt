@@ -4,8 +4,14 @@ it uses the basic java concepts of methods for functions which can be called by 
 his/her wishes
 as per the code 
 there are 5 major functions
--to add new customers
+- to add new customers
 - Display Accpunt details
 - Deposit money
 - withdraw money
-- 
+- searching of an Account using Account number
+it is a very basic project i made to recall my java knowledge and i might do 
+one project using inhertiance and more and proper sub classes 
+
+
+
+
