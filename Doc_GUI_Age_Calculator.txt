@@ -1,0 +1,13 @@
+The age calculator which is represented in a simple Graphical User Interface is based on the coding language Python 3.7
+it is using a simple library of tkinter and a web based link redirecter for opening my credentials
+
+
+it uses the simple logic of methods in python and each button is mapped to a method for its respective fuction
+
+
+Logic - 
+it take two types of user input that are 
+- their date of birth in the format - dd/mm/yyyy
+- the present day in the same format of - dd/mm/yyyy
+
+for layout it uses basic format of tkinter and its row and column layout.

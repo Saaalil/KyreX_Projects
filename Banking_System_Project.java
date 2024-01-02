@@ -6,6 +6,8 @@ class BankDetails {
     private long balance;  
     Scanner sc = new Scanner(System.in);  
     //method to open new account  
+
+       
     public void openAccount() {  
         System.out.print("Enter New Account No: ");  
         accno = sc.next();  
