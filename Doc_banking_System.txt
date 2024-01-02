@@ -1,0 +1,11 @@
+This Project demonstrates a basic banking functionality for a simple banking project
+
+it uses the basic java concepts of methods for functions which can be called by the user as per 
+his/her wishes
+as per the code 
+there are 5 major functions
+-to add new customers
+- Display Accpunt details
+- Deposit money
+- withdraw money
+- 
