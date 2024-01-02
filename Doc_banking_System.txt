@@ -12,6 +12,6 @@ there are 5 major functions
 it is a very basic project i made to recall my java knowledge and i might do 
 one project using inhertiance and more and proper sub classes 
 
-
+a project by KyreX/Saalil
 
 

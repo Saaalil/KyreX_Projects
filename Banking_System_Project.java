@@ -59,6 +59,7 @@ public class Banking_System_Project{
         // To create initial accounts  
         System.out.print("How many new members have to br register?:-  ");  
         int n = sc.nextInt();  
+        Scanner.close();
         BankDetails C[] = new BankDetails[n];  
         for (int i = 0; i < C.length; i++) {  
             C[i] = new BankDetails();  
@@ -67,7 +68,7 @@ public class Banking_System_Project{
        
         int ch;  
         do {  
-            System.out.println("\n ***Banking System Application***");  
+            System.out.println("\n ***Banking System Application main Menu***");  
             System.out.println("1. Display all account details \n 2. Search by Account number\n 3. Deposit the amount \n 4. Withdraw the amount \n 5.Exit \n A Project By KyreX/Saalil ");  
             System.out.println("Enter your choice: ");  
             ch = sc.nextInt();  
@@ -88,7 +89,7 @@ public class Banking_System_Project{
                             }  
                         }  
                         if (!found) {  
-                            System.out.println("Search failed! Account doesn't exist..!!/Invalid account number!!!");  
+                            System.out.println("Search failed! Account doesn't exist..!!!Invalid account number!!!");  
                         }  
                         break;  
                     case 3:  
@@ -118,7 +119,7 @@ public class Banking_System_Project{
                             }  
                         }  
                         if (!found) {  
-                            System.out.println("Search failed! Account doesn't exist..!!....Try a diffrent Account Number");  
+                            System.out.println("Search failed! Account doesn't exist.!!.Try a diffrent Account Number");  
                         }  
                         break;  
                     case 5:  
