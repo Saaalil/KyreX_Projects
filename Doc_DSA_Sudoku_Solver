@@ -36,7 +36,7 @@ is possible to list all the candidates from 1 to 9 in each unfilled square, i.e.
 square 4b can only hold number 2 since it is the only candidate for this position.
 The most significant aspect is that when a candidate is found for a certain
 position then it can be removed from the list as a possible candidate in the row,
-column and box [7]. The reason that it is called the “naked single” method is
+column and box . The reason that it is called the “naked single” method is
 that this kind of square contains only one possible candidate. Hidden Singles
 The hidden single method is like the naked single method but the way to find the
 way to find the empty square is different. When there is only one square in the
@@ -47,7 +47,7 @@ the square 123def). In the right side of figure 3 below, number 9 is inserted by
 using the hidden singles method.
 • Locked candidate
 Tom Davis has stated that it is possible to find a box where the only place for a
-candidate would be a row or column within that box [7]. If a candidate belongs
+candidate would be a row or column within that box . If a candidate belongs
 to a row or column then we can remove this candidate as a possible one with
 other boxes that the row (or column) connected with them. This condition is
 shown in figure 3. The box 456abc must hold a 9 and the only positions the
@@ -85,4 +85,4 @@ rest of the puzzles. Finally, if either method fills the board the algorithm cal
 the backtracking method to fill the rest of the board.
 
 
-A Project by Salil Hiremath -@Saaalil
+A Project by Salil Hiremath -@Saaalil/kyreX
